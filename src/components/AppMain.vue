@@ -1,21 +1,26 @@
-<script >
+<script>
+import axios from 'axios';
+import { store } from '../store';
+import AppBandiere.vue from './AppBandiere.vue';
 
 export default {
-  data() {
-    return { 
-      
-    };
-  },
-  
+    data() {
+        return {
+          store,
+        };
+    },
+    methods: {
+
+    },
+    components: {
+       AppBandiere,
+    },
 }
 </script>
 
 <template>
-   <main>
-      main
-   </main>
+    <AppBandiere/>
 </template>
 
-<style scoped>
-
+<style lang="scss" scoped>
 </style>

@@ -1,8 +1,52 @@
 @use "partials/variables.scss" as *;
 @use "partials/mixins.scss" as *;
+@use "partials/reset.scss" as *;
 
-h1{
-    text-align: center;
-    color: lightcoral;
+
+
+  
+
+  .contenuto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px;
+  }
+
+  .card{
+    margin-bottom: 30px;
+    color: white;
+    width: calc(100% / 4 - 30px);
+    position: relative;
     
-}
+   
+  }
+
+  .conteiner-img-api{
+    width: 50px;
+  }
+  
+  h4{
+    color: black;
+  }
+
+
+ .info-card{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.652);
+    width: 100%;
+    font-size: 1.5em;
+    display: none;
+  }
+
+  .card:hover .info-card{
+    bottom: 0;
+    display: block;
+  }
+
+  
